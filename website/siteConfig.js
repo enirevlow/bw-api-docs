@@ -26,7 +26,7 @@ const siteConfig = {
   url: 'https://RaayaBw.github.io', // Replace USERNAME with your GitHub username.
   baseUrl: '/bw-api-docs/', // The name of your GitHub project.
   projectName: 'bw-api-docs',
-  organizationName: 'browzwear',
+  organizationName: 'RaayaBw',
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'Introduction/Introduction', label: 'Docs'},
