@@ -17,14 +17,13 @@
 		"Asset-Management/Garments"
 	],
 	"Techpack": [
-		"Techpack/Create-a-techpack",
-		"Techpack/Techpack-output",
+		"Techpack/Create-a-tech-pack",
+		"Techpack/Tech-pack-output",
 		"Techpack/Point-of-Measurements",
 		"Techpack/Bill-of-Material"
 	],
 	"Outputs Export": [
-		"Outputs-Export/Outputs",
-		"Outputs-Export/Connect-to-own-render-farm"
+		"Outputs-Export/Outputs"
 	],
 	"Garment Creation": [
 		"Garment-Creation/Create-Shape",

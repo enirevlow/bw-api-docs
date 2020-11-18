@@ -8,7 +8,6 @@ title: Garment Creation Steps
 
 ## Assign material
 The code snippet below shows how to assign fabric to an existing shape. <br/>
-For more information, refer to [Material API](material.md). to learn how to add new material and retrieve its id.
 
 Python:
 ```python

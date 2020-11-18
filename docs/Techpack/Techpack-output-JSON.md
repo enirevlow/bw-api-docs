@@ -1,6 +1,6 @@
 ---
-id: Techpack-output
-title: Techpack output - JSON
+id: Tech-pack-output
+title: Tech pack output - JSON
 ---
 ## Create a Custom Template
 If you wish to create a custom template you can take a look at the default template in </br> **[app-directory]\Resources\TechPackTemplates\default**. </br>

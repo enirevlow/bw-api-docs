@@ -107,9 +107,6 @@
       "Introduction/Introduction": {
         "title": "Introduction"
       },
-      "Outputs-Export/Connect-to-own-render-farm": {
-        "title": "Connect to own render farm"
-      },
       "Outputs-Export/Outputs": {
         "title": "Outputs"
       },
@@ -143,14 +140,14 @@
       "Techpack/Bill-of-Material": {
         "title": "Bill of Material"
       },
-      "Techpack/Create-a-techpack": {
-        "title": "Create a Techpack"
+      "Techpack/Create-a-tech-pack": {
+        "title": "Create a Tech pack"
       },
       "Techpack/Point-of-Measurements": {
         "title": "Point of Measurements"
       },
-      "Techpack/Techpack-output": {
-        "title": "Techpack output - JSON"
+      "Techpack/Tech-pack-output": {
+        "title": "Tech pack output - JSON"
       },
       "Terms-of-Use": {
         "title": "Terms of Use"

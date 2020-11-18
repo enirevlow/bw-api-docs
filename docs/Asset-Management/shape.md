@@ -5,7 +5,7 @@ title: Shape API
 
 This document provides you with basic shape functionality. You can create a shape, delete a shape, and so on.
 
-A shape is construct from connected edges. For more information, refer  to [Edge API](edge.md).<br/>
+A shape is construct from connected edges.<br/>
 
 For full documentation, refer to 'BWPluginAPI_Shape.h' in the plugin pack.
 
@@ -19,7 +19,7 @@ For full documentation, refer to 'BWPluginAPI_Shape.h' in the plugin pack.
 <a name="create-shape"></a>
 ## Creating shape
 The code snippet below shows how to create a new shape. <br/>
-After the shape creation, there will be no representation of this shape in the system until you add edges to this shape. For more information, refer to [Edge API](edge.md).
+After the shape creation, there will be no representation of this shape in the system until you add edges to this shape.
 
 Python:
 ```python
@@ -68,7 +68,6 @@ foreach (var edge in edges){
 <a name="assign-fabric"></a>
 ## Assigning fabric to a shape
 The code snippet below shows how to assign fabric to an existing shape. <br/>
-For more information, refer to [Material API](material.md). to learn how to add new material and retrieve its id.
 
 Python:
 ```python
