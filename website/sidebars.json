@@ -34,6 +34,9 @@
 		"Garment-Creation/Select-Avatar",
 		"Garment-Creation/Dress-a-Garment"
 ], 
+	  "Smart Design": [
+		"Smart-Design/Create-Smart-Design-Template",
+], 
     "Costing": [
 		"Costing/Get-surface-area-material",
 		"Costing/Get-length-material",
