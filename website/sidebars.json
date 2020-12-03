@@ -36,6 +36,7 @@
 ], 
 	  "Smart Design": [
 		"Smart-Design/Create-Smart-Design-Template",
+		"Smart-Design/Test"
 ], 
     "Costing": [
 		"Costing/Get-surface-area-material",
