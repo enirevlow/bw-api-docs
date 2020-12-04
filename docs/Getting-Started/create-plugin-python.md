@@ -3,7 +3,7 @@ id: create-plugin-python
 title: Creating Python plugin
 ---
 ## Basic plugin
-Browzwear supports writing a plugin in Python 3.6+. Follow these steps to create a basic plugin:
+Browzwear supports writing a plugin in Python 3.7.8. Follow these steps to create a basic plugin:
 
 1. Install VStitcher.
 2. Go to VStitcher's plugins folder: <br/>
