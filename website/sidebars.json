@@ -36,8 +36,7 @@
 		"Garment-Creation/Dress-a-Garment"
 ], 
 	  "Smart Design": [
-		"Smart-Design/Create-Smart-Design-Template",
-		"Smart-Design/Test"
+		"Smart-Design/Configure-Smart-Design-Template",
 ], 
     "Costing": [
 		"Costing/Get-surface-area-material",
