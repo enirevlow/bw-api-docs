@@ -12,3 +12,6 @@ To learn more about our cloud licensing, please visit <a href="https://support.b
 
 ## Product Downloads
 For licensed users, product downloads are available <a href="https://login.browzwear.com/" target="_blank">here</a>.
+
+## Repository Access
+To access our repository, please complete the <a href="https://browzwear.com/partners/" target="_blank">form</a>. 
