@@ -3,14 +3,11 @@ id: Asset-Library
 title: Asset Library
 ---
 
-This document provides you with basic asset library functionality. You can create a library, add a collection to a library, add an asset to a collection, and so on.
+Asset Library is how you access materials for use in your garments. Use the Asset Library API to create a library, add a collection to a library, add an asset to a collection, and so on.
 
-For full documentation, refer to 'BWPluginAPI_AssetLibrary.h' in the plugin pack.
+For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Materials/asset-lib.htm" target="_blank">here</a>.
 
-## Library information
-Configure library.json file with your library information.
-For more information, refer to: app installation folder\Resources\schema\\{version}\asset-management\asset-library\library.json.
-<br/>
+To learn more about the rest of the Asset Library API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/AssetManagement/BWPluginAPI_AssetLibrary.h" target="_blank"> Asset Library</a> in the repository. 
 
 ## Adding an asset library
 
@@ -188,54 +185,6 @@ class BwApiPlugin
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
-
-
-## Retrieving collection ids from an asset library
-
-The code snippet below shows how to retrieve collection ids from an asset library.
-<br/>
-<!--DOCUSAURUS_CODE_TABS-->
-
-<!--Python-->
-```python
-collection_ids = BwApi.AssetLibCollectionIds(asset_library_id)
-```
-<!--C++-->
-```cpp
-BwApiVectorInt* collectionIds = BwApiVectorIntCreate();
-BwApiAssetLibCollectionIds(BwApiStringGet(assetLibraryId), collectionIds);
-```
-<!--C#-->
-```csharp
-BwApiVectorInt collectionIds = new BwApiVectorInt();
-BwApi.AssetLibCollectionIds(assetLibraryId, collectionIds);
-```
-<!--END_DOCUSAURUS_CODE_TABS-->
-<br/>
-
-## Collection information from an asset library
-
-The code snippet below shows how to get collection information from an asset library. The asset library collection get function returns a JSON file (as a string) that contains all the collection's information. For more information, refer to: app installation folder\Resources\schema\v2\asset-management\asset-library\collection.json.
-<br/>
-<!--DOCUSAURUS_CODE_TABS-->
-
-<!--Python-->
-```python
-collection_json = BwApi.AssetLibCollectionGet(asset_library_id, collection_id)
-```
-<!--C++-->
-```cpp
-BwApiString* collectionJson = BwApiStringCreate();
-BwApiAssetLibCollectionGet(BwApiStringGet(assetLibraryId), collectionId, collectionJson);
-```
-<!--C#-->
-```csharp
-string collectionJson;
-BwApi.AssetLibCollectionGet(assetLibraryId, collectionId, out collectionJson);
-```
-<!--END_DOCUSAURUS_CODE_TABS-->
-<br/>
-
 
 ## Adding a collection to an asset library
 
@@ -423,80 +372,11 @@ BwApi.AssetLibAssetRemove(assetLibraryId, assetId);
 
 <br/>
 
-## Getting asset information from an asset library
-The code snippet below shows how to get asset information from an asset library. The asset library asset get function returns a JSON file (as a string) that contains all the asset's information. For more information, refer to: app installation folder\Resources\schema\v2\asset-management\asset-library\asset.json.
-<br/>
-<!--DOCUSAURUS_CODE_TABS-->
 
-<!--Python-->
-
-```python
-asset_json = BwApi.AssetLibAssetGet(asset_library_id, asset_id)
-```
-<!--C++-->
-
-```cpp
-BwApiString* assetJson = BwApiStringCreate();
-BwApiAssetLibAssetGet(BwApiStringGet(assetLibraryId), assetId, assetJson);
-```
-<!--C#-->
-
-```csharp
-string assetJson;
-BwApi.AssetLibAssetGet(assetLibraryId, assetId, out assetJson);
-```
-<!--END_DOCUSAURUS_CODE_TABS-->
-
+## Configuring library information
+Configure library.json file with your library information.
+For more information, refer to: app installation folder\Resources\schema\\{version}\asset-management\asset-library\library.json.
 <br/>
 
-## Getting asset state from an asset library
-The code snippet below shows how to get the asset state information from an asset library. The asset library asset state get function returns a JSONfile (as a string) that contains all the asset state's information. For more information, refer to: app installation folder\Resources\schema\v2\asset-management\asset-library\state.json.
-<br/>
-<!--DOCUSAURUS_CODE_TABS-->
-
-<!--Python-->
-
-```python
-asset_state = BwApi.AssetLibAssetStateGet(asset_library_id, asset_id)
-```
-<!--C++-->
-
-```cpp
-BwApiString* assetStateJson = BwApiStringCreate();
-BwApiAssetLibAssetStateGet(BwApiStringGet(assetLibraryId), assetId, assetStateJson);
-```
-<!--C#-->
-
-```csharp
-string assetStateJson;
-BwApi.AssetLibAssetStateGet(assetLibraryId, assetId, out assetStateJson);
-```
-<!--END_DOCUSAURUS_CODE_TABS-->
-<br/>
-
-## Setting asset state in an asset library
-
-The code snippet below shows how to set the asset state in an asset library. The asset library asset state set function receives a JSON  file (as a string) that contains all the asset state's  information. For more information, refer to: app installation folder\Resources\schema\v2\asset-management\asset-library\state.json.
-<br/>
-<!--DOCUSAURUS_CODE_TABS-->
-
-<!--Python-->
-```python
-# assuming asset_state_JSON is valid asset state object
-BwApi.AssetLibAssetStateSet(asset_library_id, asset_id, asset_state_JSON)
-```
-<!--C++-->
-```cpp
-// assuming assetstateJSON is valid asset state object
-BwApiAssetLibAssetStateSet(BwApiStringGet(assetLibraryId), assetId, assetstateJSON)
-```
-<!--C#-->
-```csharp
-// assuming assetstateJSON is valid asset state object
-BwApi.AssetLibAssetStateSet(assetLibraryId, assetId, assetstateJSON);
-```
-<!--END_DOCUSAURUS_CODE_TABS-->
-
-<br/>
 
 

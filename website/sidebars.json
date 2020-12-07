@@ -7,6 +7,7 @@
 		"Getting-Started/create-plugin-cpp",
 		"Getting-Started/create-plugin-csharp",
 		"Getting-Started/Development",
+	  	"Getting-Started/Sample-Plugins",
 		"Getting-Started/Deployment"
   ],
 	"Asset Management": [
@@ -33,6 +34,9 @@
 		"Garment-Creation/Assign-Material",
 		"Garment-Creation/Select-Avatar",
 		"Garment-Creation/Dress-a-Garment"
+], 
+	  "Smart Design": [
+		"Smart-Design/Configure-Smart-Design-Template",
 ], 
     "Costing": [
 		"Costing/Get-surface-area-material",

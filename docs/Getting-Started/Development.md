@@ -2,8 +2,6 @@
 id: Development
 title: Development
 ---
-## Sample plugin
-
 ## Add menu item to the Plugins menu
 
 You can add menu items to your plugin in order to run operations in VStitcher. </br>

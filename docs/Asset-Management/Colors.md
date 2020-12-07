@@ -2,10 +2,11 @@
 id: Colors
 title: Colors
 ---
+Colors is how you manage the color resources in your garments. Use the Colors API to create your own color library, add a color library from an existing Adobe color library, and so on.
 
-This document provides you with  basic color library functionality. You can create your own color library, add a color library from an existing Adobe color library, and so on.
+For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Materials/color-libs.htm" target="_blank">here</a>.
 
-For full documentation, refer to 'BWPluginAPI_Color.h' in the plugin pack.
+To learn more about the rest of the Color API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/AssetManagement/BWPluginAPI_Color.h" target="_blank">Color</a> in the repository.
 
 ## Creating a color library
 Browzwear allow you to programmatically add a new color library to the Browzwear's app.
