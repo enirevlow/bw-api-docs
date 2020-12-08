@@ -8,9 +8,14 @@ For more information about the feature, please visit <a href="https://support.b
 
 To learn more about the rest of the Color API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/AssetManagement/BWPluginAPI_Color.h" target="_blank">Color</a> in the repository.
 
+## Sample plugin
+Sample plugin for the color library is available <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/sample-plugins/python/color-library" target="_blank">here</a>
+
 ## Creating a color library
+### Code snippet
 Browzwear allow you to programmatically add a new color library to the Browzwear's app.
-The API for creating a new color library receive JSON (as string) that contains all the information and colors for this library. For more information, refer to: app installation folder\Resources\schema\v1\color_lib.json
+The API for creating a new color library receive JSON (as string) that contains all the information and colors for this library. For more information, refer to: schema/color/color-lib.json
+
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -36,8 +41,16 @@ BwApi.ColorLibraryCreate(garmentId, colorLibJson, out colorLibId);
 
 <br/>
 
+### Result
+![](../assets/color/adding-rgb.png)
+
 ## Adding an existing color library
-You can also add an existing color library from file. Browzwear support Adobe files (.ASE, .ACO) and JSON color library which is compatible with the color-lib schema as described on the create color library section.
+You can also add an existing color library from file. Browzwear support Adobe files (.ASE, .ACO) and JSON color library which is compatible with the color-lib <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/schema/api/v1.0/color/color_lib.json" target="_blank">schema</a>.
+
+Note: the filename will be used as a library name (so filename must be unique)
+
+### Code snippet
+
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -62,8 +75,14 @@ BwApi.ColorLibraryAdd(garmentId, colorLibPath, out colorLibId);
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
 
+### Result
+![](../assets/color/existing-colors.png)
+
 ## Getting colors from a library
-Like as you can set the colors when creating a library you can get the colors as JSON object (string) from an existing library. The response can look like the 'colors' section in the example color library above.
+Like as you can set the colors when creating a library you can get  from an existing library. 
+
+### Code snippet
+
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -82,3 +101,6 @@ BwApi.ColorLibraryGetColors(garmentId, colorLibId, out colors);
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
+
+### Result
+JSON object as string that represent a list of color objects within the given library.<br> see <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/schema/api/v1.0/color/color.json" target="_blank">schema</a>. 
