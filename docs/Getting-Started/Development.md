@@ -2,6 +2,20 @@
 id: Development
 title: Development
 ---
+
+## Plugin Manager in VStitcher
+The Plugin Manager allows you to manage all of the plugins that are connected to Browzwear.
+
+To view the Plugin Manager open VStitcher/Lotta -> Preferences -> Plugins.
+
+![alt-text](../assets/PluginManager.png)
+1. Add plugin: The plus button allow you add a custom plugin. To add a plugin, select a folder with plugin.json file.
+2. Remove plugin: The minus button allows you to remove a custom plugin. This option is multi select: you may select more than one item to remove as long all the items are removable. (You cannot remove a plugin from a default folder.)
+3. Rescan plugins: Search for new plugins in the default folders or remove disabled or non-existing default plugins.
+4. Activate/Deactivate: Disable/Enable a plugin. After you Check/Uncheck a plugin, press the OK button to invoke the operation.
+5. Status: Shows the current status of a plugin.
+6. Reload: Upon failure, the reload button appears: the yellow diamond with exclamation mark. You may attempt to fix the problem and try again to load the plugin.
+
 ## Add menu item to the Plugins menu
 
 You can add menu items to your plugin in order to run operations in VStitcher. </br>
@@ -73,34 +87,6 @@ class SamplePluginCallback : CallbackBase
 
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-## Versioning
-  Important: The latest API version is 3 </br>
-  To support backward compatability if the 'api_version' field is not exist on the plugin.json then version 1 will be used. </br>
-  In order to be able to use the latest API schemas and functions please add the 'api_version' with the right value </br>
-  For example:
-```json
- 	{
-  "identifier": "com.browzwear.sample",
-  "name": "Sample plugin",
-  "api_version": 3,
-  "type": "python",
-  "main": "src",
-  "version": "1.0.1"
- 	}
-```
-
-## Plugin Manager in VStitcher
-The Plugin Manager allows you to manage all of the plugins that are connected to Browzwear.
-
-To view the Plugin Manager open VStitcher/Lotta -> Preferences -> Plugins.
-
-![alt-text](../assets/PluginManager.png)
-1. Add plugin: The plus button allow you add a custom plugin. To add a plugin, select a folder with plugin.json file.
-2. Remove plugin: The minus button allows you to remove a custom plugin. This option is multi select: you may select more than one item to remove as long all the items are removable. (You cannot remove a plugin from a default folder.)
-3. Rescan plugins: Search for new plugins in the default folders or remove disabled or non-existing default plugins.
-4. Activate/Deactivate: Disable/Enable a plugin. After you Check/Uncheck a plugin, press the OK button to invoke the operation.
-5. Status: Shows the current status of a plugin.
-6. Reload: Upon failure, the reload button appears: the yellow diamond with exclamation mark. You may attempt to fix the problem and try again to load the plugin.
 
 ## Creating an external html window
 

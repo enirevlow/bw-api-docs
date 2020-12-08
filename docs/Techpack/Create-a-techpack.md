@@ -36,3 +36,8 @@ BwApi.GarmentTechpackExport(garmentId, presetName, outputFolder);
 VStitcher / Lotta Tech-Pack export produces a directory with image assets and an index JSON file with the exported data and references to the image assets.
 
 ![](../assets/tech-pack-dirs.PNG)
+
+## Techpack schema
+you can find the schema for output.json <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/BWPlugin/schema/api" target="_blank">here</a>
+
+ 

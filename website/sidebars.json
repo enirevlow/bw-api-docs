@@ -4,11 +4,11 @@
   "Getting Started": [
 		"Getting-Started/License-and-Authentication",
 		"Getting-Started/Plugin-Structure",
+		"Getting-Started/Sample-Plugins",
 		"Getting-Started/Create-plugin-python",
 		"Getting-Started/Create-plugin-cpp",
 		"Getting-Started/Create-plugin-csharp",
 		"Getting-Started/Development",
-	  "Getting-Started/Sample-Plugins",
 		"Getting-Started/Deployment"
   ],
 	"Asset Management": [

@@ -71,13 +71,13 @@
       "Garment-Creation/Stitch-Shapes": {
         "title": "Stitch Shapes"
       },
-      "Getting-Started/create-plugin-cpp": {
+      "Getting-Started/Create-plugin-cpp": {
         "title": "Creating C++ plugin"
       },
-      "Getting-Started/create-plugin-csharp": {
+      "Getting-Started/Create-plugin-csharp": {
         "title": "Creating C# plugin"
       },
-      "Getting-Started/create-plugin-python": {
+      "Getting-Started/Create-plugin-python": {
         "title": "Creating Python plugin"
       },
       "Getting-Started/Debugging": {
@@ -95,8 +95,14 @@
       "Getting-Started/License-and-Authentication": {
         "title": "License and Authentication"
       },
+      "Getting-Started/Plugin-Structure": {
+        "title": "Plugin structure"
+      },
       "Getting-Started/Sample-Plugin": {
         "title": "Sample Plugin"
+      },
+      "Getting-Started/Sample-Plugins": {
+        "title": "Sample Plugins"
       },
       "Getting-Started/Your-first-plugin": {
         "title": "Your first plugin"
@@ -137,6 +143,9 @@
       "Size-Recommendation/Simulation": {
         "title": "Simulation"
       },
+      "Smart-Design/Configure-Smart-Design-Template": {
+        "title": "Configure Smart Design Template"
+      },
       "Techpack/Bill-of-Material": {
         "title": "Bill of Material"
       },
@@ -163,6 +172,7 @@
       "Techpack": "Techpack",
       "Outputs Export": "Outputs Export",
       "Garment Creation": "Garment Creation",
+      "Smart Design": "Smart Design",
       "Costing": "Costing",
       "Terms of Use": "Terms of Use",
       "Change log": "Change log"
