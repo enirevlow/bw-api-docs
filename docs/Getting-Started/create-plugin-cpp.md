@@ -1,5 +1,5 @@
 ---
-id: create-plugin-cpp
+id: Create-plugin-cpp
 title: Creating C++ plugin
 ---
 

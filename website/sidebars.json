@@ -3,11 +3,12 @@
 	"Introduction":["Introduction/Introduction"],
   "Getting Started": [
 		"Getting-Started/License-and-Authentication",
-		"Getting-Started/create-plugin-python",
-		"Getting-Started/create-plugin-cpp",
-		"Getting-Started/create-plugin-csharp",
+		"Getting-Started/Plugin-Structure",
+		"Getting-Started/Create-plugin-python",
+		"Getting-Started/Create-plugin-cpp",
+		"Getting-Started/Create-plugin-csharp",
 		"Getting-Started/Development",
-	  	"Getting-Started/Sample-Plugins",
+	  "Getting-Started/Sample-Plugins",
 		"Getting-Started/Deployment"
   ],
 	"Asset Management": [
@@ -36,13 +37,11 @@
 		"Garment-Creation/Dress-a-Garment"
 ], 
 	  "Smart Design": [
-		"Smart-Design/Configure-Smart-Design-Template",
+		"Smart-Design/Configure-Smart-Design-Template"
 ], 
     "Costing": [
 		"Costing/Get-surface-area-material",
-		"Costing/Get-length-material",
-		"Costing/Get-bounding-box-material",
-		"Costing/Get-Allowance"
+		"Costing/Get-length-material"
 ],
 	"Terms of Use": [
 	"Terms-of-Use"

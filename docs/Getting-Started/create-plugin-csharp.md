@@ -1,5 +1,5 @@
 ---
-id: create-plugin-csharp
+id: Create-plugin-csharp
 title: Creating C# plugin
 ---
 Browzwear supports writing a plugin in C#. Follow these steps to create a basic plugin:
