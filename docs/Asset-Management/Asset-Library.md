@@ -9,9 +9,13 @@ For more information about the feature, please visit <a href="https://support.br
 
 To learn more about the rest of the Asset Library API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/AssetManagement/BWPluginAPI_AssetLibrary.h" target="_blank"> Asset Library</a> in the repository. 
 
+## Sample plugin
+Sample plugin for the asset library is available <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/sample-plugins/python/Asset%20Library" target="_blank">here</a>
+
 ## Adding an asset library
 
-The code snippet below shows how to add an asset library to VStitcher/Lotta. The library add function receives a JSON file (as a string) that contains all the library information. 
+### Code snippet
+The library add function receives a JSON file (as a string) that contains all the library information. 
 
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -36,6 +40,9 @@ BwApi.AssetLibAdd(libraryInfo, out assetLibraryId);
 <!--END_DOCUSAURUS_CODE_TABS-->
 
 <br/>
+
+### Result
+![](../assets/asset-library/after-adding.png)
 
 ## Updating an asset library
 The code snippet below shows how to update an asset library in VStitcher/Lotta. The library add function receives a JSON file (as a string) that contains all the library information.
