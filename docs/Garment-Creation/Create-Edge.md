@@ -3,6 +3,7 @@ id: Create-Edge
 title: Create Edge
 ---
 
+## Code Snippet
 The code snippet below shows how to add an edge to an existing shape.
 
 <!--DOCUSAURUS_CODE_TABS-->
@@ -46,7 +47,7 @@ edgePoints.add({0, 0, BwApi.BW_API_POINT_TYPE_SHARP, -1});
 // define non graded (-1) sharp point, see BwApiPointType (BWPluginAPI_Types.h) for further information
 edgePoints.add({10, 0, BwApi.BW_API_POINT_TYPE_SHARP, -1});
 
-# create a new edge, we are passing -1 to the beforeEdgeId param to insert the edge at the end.
+// create a new edge, we are passing -1 to the beforeEdgeId param to insert the edge at the end.
 int edgeId = 0;
 BwApi.EdgeCreate(garmentId, shapeId, -1, edgePoints, &edgeId);
 ```
@@ -80,3 +81,6 @@ BwApi.EdgeCreate(garmentId, shapeId, -1, edgePoints, out edgeId)
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
+
+## Result
+You will be able to see the shape in the UI only after creating all edges, and closing the shape.

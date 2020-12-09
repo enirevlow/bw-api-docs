@@ -9,7 +9,7 @@ This document provides you with basic cluster functionality - You can create a c
 For full documentation, refer to 'BWPluginAPI_Cluster.h' in the plugin pack.
 
 ## Creating a cluster
-The code snippet below shows how to create a cluster.
+### Code Snippet
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -43,9 +43,15 @@ BwApi.ClusterCreate(garmentId,
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
 
+### Result
+New cluster id.<br>
+Note: Creating a cluster without any shape doesn't do anything. <br/>
+
 ## Adding shape to a cluster
-Creating a cluster without any shape doesn't do anything. <br/>
-The code snippet below shows how to add an existing shape to an existing cluster. A cluster may have more than one shape associated with it.
+A cluster may have more than one shape associated with it.
+
+### Code Snippet
+
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -74,13 +80,18 @@ BwApi.ClusterShapeAdd(garmentId,
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
 
+### Result
+![](../assets/arrange-shape/add-shape.png)
+
 ## Setting shape offset on a cluster
+
+### Code Snippet
 The code snippet below shows how to set the shape offset from the cluster hanging point.
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
 
-```
+```python
 # Get the current shape offset
 offset = BwApi.ClusterShapeOffsetGet(garmentId, clusterId, shapeId)
 
@@ -123,8 +134,13 @@ BwApi.ClusterShapeOffsetSet(garmentId, clusterId, shapeId, offset);
 
 <br/>
 
+### Result
+![](../assets/arrange-shape/offset-shape.png)
+
+
 ## Removing a shape from a cluster
-The code snippet below shows how to remove a shape from a cluster.
+
+### Code Snippet
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -148,8 +164,12 @@ BwApi.ClusterShapeRemove(garmentId, clusterId, shapeId);
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
 
+### Result
+![](../assets/arrange-shape/delete-cluster.png)
+
 ## Deleting a cluster
-The code snippet below shows how to remove a cluster. Shapes associated with the cluster have no cluster after this action completes.
+
+### Code Snippet
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -172,3 +192,7 @@ BwApi.ClusterDelete(garmentId, clusterId);
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
+
+### Result
+![](../assets/arrange-shape/delete-cluster.png)
+Note: Shapes associated with the cluster have no cluster after this action completes.

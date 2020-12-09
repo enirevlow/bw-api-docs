@@ -3,6 +3,7 @@ id: Dress-a-Garment
 title: Dress a garment
 ---
 
+## Code snippet
 The code snippet below shows how to start garment dress simulation on the current avatar. 
 
 <!--DOCUSAURUS_CODE_TABS-->
@@ -23,3 +24,6 @@ BwApiGarmentDress(garmentId);
 BwApi.GarmentDress(garmentId);
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
+
+## Result
+![](../assets/dress/dress.png)

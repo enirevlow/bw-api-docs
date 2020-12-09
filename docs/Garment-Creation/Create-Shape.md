@@ -37,4 +37,23 @@ BwApi.ShapeCreate(garmentId, out shapeId);
 
 ## Delete Shape
 The code snippet below shows how to delete an existing shape. 
+
 ### Code Snippet
+Note: deleting a shape deletes all the edges associated with the shape.
+
+<!--DOCUSAURUS_CODE_TABS-->
+
+<!--Python-->
+```py
+BwApi.ShapeDelete(garmentId, shapeId)
+```
+<!--C++-->
+```cpp
+BwApiShapeDelest(garmentId, shapeId);
+```
+<!--C#-->
+```csharp
+BwApi.ShapeDelete(garmentId, shapeId);
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
+<br/>
