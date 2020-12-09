@@ -68,7 +68,7 @@ BwApi.AvatarImport(path, out avatarId);
 <br/>
 
 ### Result
-![](../assets/Avatar/import-avatar.PNG)
+![](../assets/Avatar/import-avatar.png)
 
 ## Importing a VSA file
 
@@ -98,4 +98,4 @@ BwApi.AvatarImportVSA(path, out avatarIds);
 <br/>
 
 ### Result
-![](../assets/Avatar/import-avatar.PNG)
+![](../assets/Avatar/import-avatar.png)
