@@ -3,9 +3,7 @@ id: Material
 title: Material
 ---
 
-This document provides you with basic material functionality. You can add new material, set material physics, remove materials, and so on. <br/>
-
-Material can be fabric, seam (for edges), artwork, or trim.
+Materials are fabrics, seams, artworks or trims on a garment. Use the Material API to add new material, set material physics, remove materials, and so on. <br/>
 
 For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Materials/materials.htm" target="_blank">here</a>.
 
