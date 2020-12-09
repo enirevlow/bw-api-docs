@@ -3,9 +3,11 @@ id: Point-of-Measurements
 title: Point of Measurements
 ---
 
-This document provides you with basic ruler functionality. You can create a ruler, get all ruler ids in a garment, get a ruler name, get a ruler length, and so on.
+Point of Measurements or Ruler is how you measure the width or lenghth of a garment. Use the Ruler API to create a ruler, get all ruler ids in a garment, get a ruler name, get a ruler length, and so on.
 
-For full documentation, refer to 'BWPluginAPI_Ruler.h' in the plugin pack.
+For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Advanced/rulers-vs.htm" target="_blank">here</a>.
+
+To learn more about the rest of the API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/CAD/BWPluginAPI_Ruler.h" target="_blank">Ruler</a> in the repository.
 
 ## Creating a ruler
 The code snippet below shows how to create a ruler in a garment. <br/>
