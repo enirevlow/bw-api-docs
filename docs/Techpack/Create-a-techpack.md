@@ -2,7 +2,11 @@
 id: Create-a-tech-pack
 title: Create a Tech pack
 ---
-VStitcher's tech pack feature allows you to generate a technical package for production, including all specifications, materials, and patterns being used on the current 3D project. You can save standard tech pack settings for repeat use.
+Tech pack is what you generate as a technical package for production, including all colorways images, BOM, artwork placement, etc being used on the garment. Use the Teck Pack API to export a tech pack using a preset.
+
+For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Tech%20Packs/tech-packs-create.htm" target="_blank">here</a>.
+
+To learn more about creating a tech pack preset, please visit <a href="https://support.browzwear.com/VStitcher/Tech%20Packs/tech-packs-save.htm" target="_blank">here</a>.
 
 ## Exporting the tech pack
 The code snippet below shows how to export the tech pack for the current garment. <br/>
