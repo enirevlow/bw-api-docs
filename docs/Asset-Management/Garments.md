@@ -3,7 +3,7 @@ id: Garments
 title: Garments
 ---
 
-This document provides you with basic garment functionality. You can create a garment, get shapes, get information, and so on.
+Garments is what you create in Browzwear applications. Use the Garment Creation API to create a garment, open a garment, dress a garment, and so on.
 
 For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/basic.htm" target="_blank">here</a>.
 
