@@ -10,7 +10,9 @@ For more information about the feature, please visit <a href="https://support.b
 To learn more about the rest of the API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/CAD/BWPluginAPI_Ruler.h" target="_blank">Ruler</a> in the repository.
 
 ## Creating a ruler
-The code snippet below shows how to create a ruler in a garment. <br/>
+
+### Code snippet
+
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -62,8 +64,13 @@ BwApi.RulerCreate(garmentId, "new ruler", elements, out rulerId);
 
 <br/>
 
+### Result
+![](../assets/techpack/create-ruler.png)
+
 ## Getting ruler ids
-The code snippet below shows how to get all the ruler ids in a garment. <br/>
+
+### Code snippet
+
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -91,9 +98,13 @@ BwApi.RulerIds(out garmentId);
 
 <br/>
 
+### Result
+List of all ruler ids
 
 ## Getting a ruler name
-The code snippet below shows how to get a ruler name. <br/>
+
+### Code snippet
+
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -122,8 +133,13 @@ BwApi.RulerNameGet(garmentId, rulerId, out rulerName);
 
 <br/>
 
+### Result
+The name of the Ruler for the given ruler id.
+
 ## Getting the length of a ruler
-The code snippet below shows how to get the length of a ruler. <br/>
+
+### Code snippet
+
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -158,3 +174,6 @@ BwApi.RulerLengthGet(garmentId, rulerId, sizeId, out length);
 <!--END_DOCUSAURUS_CODE_TABS-->
 
 <br/>
+
+### Result
+The total length of the Ruler 

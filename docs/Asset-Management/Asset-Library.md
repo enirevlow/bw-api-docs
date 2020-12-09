@@ -45,7 +45,9 @@ BwApi.AssetLibAdd(libraryInfo, out assetLibraryId);
 ![](../assets/asset-library/after-adding.png)
 
 ## Updating an asset library
-The code snippet below shows how to update an asset library in VStitcher/Lotta. The library add function receives a JSON file (as a string) that contains all the library information.
+
+### Code snippet
+The library add function receives a JSON file (as a string) that contains all the library information.
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -68,7 +70,7 @@ BwApi.AssetLibUpdate(assetLibraryId, libraryInfo);
 
 ## Getting asset library information
 
-The code snippet below shows how to get the asset library information from VStitcher/Lotta. The asset library get function returns a JSON  file (as a string) that contains all the asset library information.
+### Code snippet
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -87,9 +89,12 @@ BwApi.AssetLibGet(assetLibraryId, out libraryInfoJson);
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
 
+### Result
+A JSON  file (as a string) that contains all the asset library information.
+
 ## Removing an asset library
 
-The code snippet below shows how to remove an asset library from VStitcher/Lotta.
+### Code snippet
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -110,7 +115,7 @@ BwApi.AssetLibRemove(assetLibraryId);
 
 ## Registering an asset library event
 
-You can register your plugin to be notified when certain asset library  events happen. 
+You can register your plugin to be notified when certain asset library events happen. 
  
 The supported events are: 
  - BW_API_EVENT_ASSET_LIB_INITIALIZE
@@ -119,6 +124,7 @@ The supported events are:
  - BW_API_EVENT_ASSET_LIB_REFRESH
 <br/>
 
+### Code snippet
 <!--DOCUSAURUS_CODE_TABS-->
 
 
@@ -195,7 +201,10 @@ class BwApiPlugin
 
 ## Adding a collection to an asset library
 
-The code snippet below shows how to add a collection to the asset library. The asset library collection add function receives a JSON file (as a string) that contains all the collection's information. For more information, refer to: app installation folder\Resources\schema\v2\asset-management\asset-library\collection.json.
+### Code snippet
+The asset library collection add function receives a JSON file (as a string) that contains all the collection's information.
+For more information, refer to the <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/schema/api/v2.0/asset-library/collection.json" target="_blank">schema</a>. 
+
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -215,8 +224,13 @@ BwApi.AssetLibCollectionAdd(assetLibraryId, collectionJson, out collectionId);
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
 
+### Result
+After adding 5 collections:
+![](../assets/asset-library/collections.png)
+
 ## Removing a collection from an asset library
-The code snippet below shows how to remove a collection from an asset library. 
+
+### Code snippet
 <!--DOCUSAURUS_CODE_TABS-->
 
 
@@ -237,9 +251,14 @@ BwApi.AssetLibCollectionRemove(assetLibraryId, collectionId);
 <br/>
 
 
-<a name="asset-library-collection-asset-ids"></a>
+### Result
+Seams collection was removed:
+![](../assets/asset-library/remove-collection.png)
+
 ## Getting asset ids from a collection
-The code snippet below shows how to get the asset ids from a collection.
+
+### Code snippet
+
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -260,76 +279,14 @@ BwApi.AssetLibCollectionAssetIds(assetLibraryId, assetIds);
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
 
-## Adding an asset to a collection
-The code snippet below shows how to add an asset to a collection. 
-<br/>
-<!--DOCUSAURUS_CODE_TABS-->
+### Result
+List of Asset ids that are linked to the given collection id
 
-<!--Python-->
-```python
-BwApi.AssetLibCollectionAssetAdd(asset_library_id, collection_id, asset_id)
-```
-<!--C++-->
-```cpp
-const char* collectionJson;
-BwApiAssetLibCollectionAssetAdd(BwApiStringGet(assetLibraryId), collectionId, assetId);
-```
-<!--C#-->
-```csharp
-BwApi.AssetLibCollectionAssetAdd(assetLibraryId, collectionId, assetId);
-```
-<!--END_DOCUSAURUS_CODE_TABS-->
-<br/>
-
-## Removing an asset from a collection
-The code snippet below shows how to remove an asset from a collection. 
-<!--DOCUSAURUS_CODE_TABS-->
-
-<!--Python-->
-
-```python
-BwApi.AssetLibCollectionAssetRemove(asset_library_id, collection_id, asset_id)
-```
-<!--C++-->
-```cpp
-const char* collectionJson;
-BwApiAssetLibCollectionAssetRemove(BwApiStringGet(assetLibraryId), collectionId, assetId);
-```
-<!--C#-->
-```csharp
-BwApi.AssetLibCollectionAssetRemove(assetLibraryId, collectionId, assetId);
-```
-<!--END_DOCUSAURUS_CODE_TABS-->
-
-<br/>
-
-## Getting asset ids from an asset library
-The code snippet below shows how to get the asset ids from a asset library.
-<br/>
-<!--DOCUSAURUS_CODE_TABS-->
-
-<!--Python-->
-
-```python
-asset_ids = BwApi.AssetLibAssetIds(asset_library_id)
-```
-<!--C++-->
-
-```cpp
-BwApiVectorInt* assetIds = BwApiVectorIntCreate();
-BwApiAssetLibAssetIds(BwApiStringGet(assetLibraryId), assetIds);
-```
-<!--C#-->
-
-```csharp
-BwApiVectorInt assetIds = new BwApiVectorInt();
-BwApi.AssetLibAssetIds(assetLibraryId, assetIds);
-```
-<!--END_DOCUSAURUS_CODE_TABS-->
-
-<br/>
 ## Adding an asset to an asset library
-The code snippet below shows how to add an asset to an asset library. The asset library asset add function receives a JSON file (as a string) that contains all the asset's information. For more information, refer to: app installation folder\Resources\schema\v2\asset-management\asset-library\asset.json.
+
+### Code snippet
+The asset library asset add function receives a JSON file (as a string) that contains all the asset's information. 
+For more information, refer to the <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/schema/api/v2.0/asset-library/asset.json" target="_blank">schema</a>.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -355,8 +312,16 @@ BwApi.AssetLibAssetAdd(assetLibraryId, assetJson, out assetId);
 
 <br/>
 
+### Result
+New asset id.<br>
+Note: 
+1. The asset won't be available on the UI until it will be added to a collection using BwApiAssetLibCollectionAssetAdd
+2. You may add the asset to multiple collections
+
 ## Removing an asset from an asset library
-The code snippet below shows how to remove an asset from an asset library. 
+
+### Code snippet
+ 
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -379,10 +344,94 @@ BwApi.AssetLibAssetRemove(assetLibraryId, assetId);
 
 <br/>
 
+## Adding an asset to a collection
+
+### Code snippet
+
+<br/>
+<!--DOCUSAURUS_CODE_TABS-->
+
+<!--Python-->
+```python
+BwApi.AssetLibCollectionAssetAdd(asset_library_id, collection_id, asset_id)
+```
+<!--C++-->
+```cpp
+const char* collectionJson;
+BwApiAssetLibCollectionAssetAdd(BwApiStringGet(assetLibraryId), collectionId, assetId);
+```
+<!--C#-->
+```csharp
+BwApi.AssetLibCollectionAssetAdd(assetLibraryId, collectionId, assetId);
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
+<br/>
+
+### Result
+![](../assets/asset-library/add-asset.png)
+
+## Removing an asset from a collection
+
+### Code snippet
+
+<!--DOCUSAURUS_CODE_TABS-->
+
+<!--Python-->
+
+```python
+BwApi.AssetLibCollectionAssetRemove(asset_library_id, collection_id, asset_id)
+```
+<!--C++-->
+```cpp
+const char* collectionJson;
+BwApiAssetLibCollectionAssetRemove(BwApiStringGet(assetLibraryId), collectionId, assetId);
+```
+<!--C#-->
+```csharp
+BwApi.AssetLibCollectionAssetRemove(assetLibraryId, collectionId, assetId);
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
+
+<br/>
+
+### Result
+![](../assets/asset-library/remove-asset.png)
+
+
+## Getting asset ids from an asset library
+
+### Code snippet
+
+<br/>
+<!--DOCUSAURUS_CODE_TABS-->
+
+<!--Python-->
+
+```python
+asset_ids = BwApi.AssetLibAssetIds(asset_library_id)
+```
+<!--C++-->
+
+```cpp
+BwApiVectorInt* assetIds = BwApiVectorIntCreate();
+BwApiAssetLibAssetIds(BwApiStringGet(assetLibraryId), assetIds);
+```
+<!--C#-->
+
+```csharp
+BwApiVectorInt assetIds = new BwApiVectorInt();
+BwApi.AssetLibAssetIds(assetLibraryId, assetIds);
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
+
+<br/>
+
+### Result
+List of all asset ids within the given library.
 
 ## Configuring library information
 Configure library.json file with your library information.
-For more information, refer to: app installation folder\Resources\schema\\{version}\asset-management\asset-library\library.json.
+For more information, refer to the <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/schema/api/v2.0/asset-library/library.json" target="_blank">schema</a>. 
 <br/>
 
 
