@@ -2,7 +2,7 @@
 id: Avatars
 title: Avatars
 ---
-This document provides you with basic avatar functionality. You can get the current avatar, set the current avatar, get the list of all the avatars in VStitcher/Lotta, and so on.
+Avatars is what you dress the garments on 3D. Use the Avatars API get the current avatar, set the current avatar, get the list of all the avatars in VStitcher/Lotta, and so on.
 
 For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Avatars/avatars.htm" target="_blank">here</a>.
 

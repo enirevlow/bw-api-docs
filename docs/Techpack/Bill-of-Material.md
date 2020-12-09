@@ -2,6 +2,9 @@
 id: Bill-of-Material
 title: Bill of Material
 ---
+Bill of Material is how you obtain information of materials and colors used in each colorway of the garment. Use the In Use API to get the material or color in use. 
+
+For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Colorways/colorways-vs.htm">here</a>.
 
 ## Getting colorway IDs
 The code snippet below shows how to get the colorway ids in the garment in the right order. <br/>
