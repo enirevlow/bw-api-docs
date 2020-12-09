@@ -104,9 +104,6 @@
       "Getting-Started/Sample-Plugins": {
         "title": "Sample Plugins"
       },
-      "Getting-Started/Your-first-plugin": {
-        "title": "Your first plugin"
-      },
       "Getting-Started/Your-HTML-window": {
         "title": "Your HTML window"
       },
@@ -172,6 +169,7 @@
       "Techpack": "Techpack",
       "Outputs Export": "Outputs Export",
       "Garment Creation": "Garment Creation",
+      "Colorways": "Colorways",
       "Smart Design": "Smart Design",
       "Costing": "Costing",
       "Terms of Use": "Terms of Use",
