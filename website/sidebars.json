@@ -3,7 +3,7 @@
 	"Introduction":["Introduction/Introduction"],
   "Getting Started": [
 		"Getting-Started/License-and-Authentication",
-		"Getting-Started/Plugin-Structure",
+		"Getting-Started/Understanding-The-API",
 		"Getting-Started/Sample-Plugins",
 		"Getting-Started/Create-plugin-python",
 		"Getting-Started/Create-plugin-cpp",

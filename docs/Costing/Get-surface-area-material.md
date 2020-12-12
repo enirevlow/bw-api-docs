@@ -2,7 +2,9 @@
 id: Get-surface-area-material
 title: Get surface area material
 ---
-The code snippet below shows how to get the surface area of a material. <br/>
+
+## Code snippet
+
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -22,3 +24,5 @@ BwApi.MaterialSurfaceAreaGet(garmentId, colorwayId, materialId, sizeId, out area
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
 
+## Result
+The surface area of a material. <br/>

@@ -7,9 +7,38 @@ This document provides you with basic colorway functionality. You can get the cu
 
 For full documentation, refer to 'BWPluginAPI_Colorway.h' in the plugin pack.
 
+## Getting colorways ids 
+
+### code snippet
+
+<!--DOCUSAURUS_CODE_TABS-->
+
+<!--Python-->
+
+```python
+BwApi.GarmentColorwayIds(garment_id)
+```
+<!--C++-->
+
+```cpp
+BwApiGarmentColorwayIds(garmentId);
+```
+<!--C#-->
+
+```csharp
+BwApi.GarmentColorwayIds(garmentId);
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
+<br/>
+
+### Result
+Ids of the following colorways:
+![](../assets/colorways/all-colorways.png)
 
 ## Deleting a colorway
-The code snippet below shows how to delete a colorway. <br/>
+
+### code snippet
+
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -33,8 +62,12 @@ BwApi.ColorwayDelete(garmentId, colorwayId);
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
 
+### Result
+![](../assets/colorways/delete.png)
+
 ## Getting the current colorway
-The code snippet below shows how to get the current colorway.
+
+### code snippet
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -56,9 +89,12 @@ BwApi.ColorwayCurrentGet(garmentId, out currentColorway);
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
 
+### Result
+The id of the curent colorway.
 
 ## Setting the current colorway
-The code snippet below shows how to set the current colorway. <br/>
+
+### code snippet
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -81,10 +117,14 @@ BwApi.ColorwayCurrentSet(garmentId, colorwayId);
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-<br/><br/>
+<br/>
+
+### Result
+![](../assets/colorways/set-colorway.png)
 
 ## Cloning a colorway
-The code snippet below shows how to clone a colorway.
+
+### code snippet
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -111,8 +151,12 @@ BwApi.ColorwayClone(garmentId, colorwayId, out newColorwayId);
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
 
+### Result
+![](../assets/colorways/clone.png)
+
 ## Getting the material ids of a colorway
-The code snippet below shows how to get the material ids of a colorway.
+
+### code snippet
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -138,8 +182,12 @@ BwApi.ColorwayMaterialIds(garmentId, colorwayId, materialIds);
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
 
+### Result
+A list of material ids from given colorway id
+
 ## Getting the colorway name
-The code snippet below shows how to get the name of a colorway.
+
+### code snippet
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -167,8 +215,12 @@ BwApi.ColorwayNameGet(garmentId, colorwayId, out colorwayName);
 
 <br/>
 
+### Result
+The name of the colorway
+
 ## Setting the colorway name
-The code snippet below shows how to set the name of a colorway.
+
+### code snippet
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -195,10 +247,12 @@ BwApi.ColorwayNameSet(garmentId, colorwayId, "colorway name");
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
 
+### Result
+![](../assets/colorways/set-name.png)
 
 ## Getting colors in use
-The code snippet below shows how to get the colors in use in a colorway. The return value from this function is an array of color.
-Note: color is represented by RGB data.
+
+### code snippet
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -226,10 +280,14 @@ BwApi.ColorwayColorsInUseGet(garmentId, colorwayId, colors);
 
 <br/>
 
+### Result
+The colors in use in a colorway.
+The return value from this function is an array of color.
+Note: color is represented by RGB data.
 
 ## Updating colors in use
-The code snippet below shows how to update a color in use in a colorway. The function gets an existing color and replaces it with another color.
-Note: color is represented by RGB data.
+
+### code snippet
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
 

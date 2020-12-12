@@ -17,11 +17,11 @@ Send the whole plugin folder to client and then ask the client to [add this plug
 
 ## example
 For example, this is the plugin folder structure:
-```
+```py
   | [lib]
-  | - [requests]
+    |- [requests]
   | [src]
-  | - main.py
+    |- main.py
   | plugin.json
 ```
 Within the plugin (main.py) add 'lib' location to sys.path and only then import 'requests'.

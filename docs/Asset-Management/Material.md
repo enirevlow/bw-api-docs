@@ -9,6 +9,9 @@ For more information about the feature, please visit <a href="https://support.b
 
 To learn more about the rest of the Material API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/AssetManagement/BWPluginAPI_Material.h" target="_blank">Material</a> in the repository.
 
+## Sample plugin
+Sample plugin for Materials is available <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/sample-plugins/python" target="_blank">here</a>
+
 ## Importing U3M
 
 ### Code snippet

@@ -95,14 +95,14 @@
       "Getting-Started/License-and-Authentication": {
         "title": "License and Authentication"
       },
-      "Getting-Started/Plugin-Structure": {
-        "title": "Plugin structure"
-      },
       "Getting-Started/Sample-Plugin": {
         "title": "Sample Plugin"
       },
       "Getting-Started/Sample-Plugins": {
         "title": "Sample Plugins"
+      },
+      "Getting-Started/Understanding-The-API": {
+        "title": "Understanding the API"
       },
       "Getting-Started/Your-HTML-window": {
         "title": "Your HTML window"

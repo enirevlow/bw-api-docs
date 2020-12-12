@@ -2,7 +2,9 @@
 id: Get-length-material
 title: Get length material
 ---
-The code snippet below shows how to get length and depth of a material. <br/>
+
+## Code snippet
+
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
@@ -30,3 +32,6 @@ BwApi.MaterialLengthGet(garmentId, colorwayId, materialId, sizeId, out length, o
 
 
 <br/>
+
+## Result
+The length and depth of a material.

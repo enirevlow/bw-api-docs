@@ -6,6 +6,15 @@ title: Creating Python plugin
 ## Prerequisites
 Install Python 3.7.8 if you do not already have it installed. </br>
 
+## boilerplate
+You can build your first plugin with a few simple steps:
+1. Download this boilerplate.
+2. Update the plugin.json with your plugin's identifier and name
+3. [Add the plugin](Development) to your app.
+
+That's it! Now you'll see your plugin under the "Plugins" tab.
+Follow the "TODO" in "main.py" to configure your plugin
+
 ## Basic plugin
 Browzwear supports writing a plugin in Python 3.7.8. Follow these steps to create a basic plugin:
 

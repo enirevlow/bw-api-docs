@@ -129,7 +129,7 @@ The supported events are:
 
 
 <!--Python-->
-```python
+```py
 class EventCallback(BwApi.CallbackBase):
   def Run(self, garment_id, callback_id, data_string):
     # callback for asset library initialazation

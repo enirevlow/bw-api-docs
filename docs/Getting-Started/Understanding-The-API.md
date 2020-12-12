@@ -1,11 +1,25 @@
 ---
-id: Plugin-Structure
-title: Plugin structure
+id: Understanding-The-API
+title: Understanding the API
 ---
 
 ## API functions
 The API is based on C functions and is ported automatically to Python and C#.
 The API for all programming languages mentioned above is the same with a slight difference:  while C/C++ API contains a BwApi prefix to the function name, Python and C# treats this as a namespace. 
+For example the function for creating a garment looks as follows for each language:
+
+C++:
+```
+BwApiGarmentCreate("Garment Name", ...);
+```
+Python:
+```
+BwApi.GarmentCreate('Garment Name', ...)
+```
+C#:
+```
+BwApi.GarmentCreate("Garment Name", ...);
+```
 
 For C/C++ only, in order to avoid having different STL versions, there is a built-in support for data types like string and vectors that you should use in order to retrieve or push data to the API.
 For example:
@@ -67,10 +81,10 @@ npm semver compatible string representing range of versions the plugin is compat
 For more information see https://www.npmjs.com/package/semver.
 
 #### white_list
-Whitelisting URLs.
+Add every remote URL that you are using to the whitelist.
 
 #### htmlroot
-If you are working with a remote site then you can set the HtmlRoot to "." 
+Root to your html resources.
 
 ### Example
 ```
