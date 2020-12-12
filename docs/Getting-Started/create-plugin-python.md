@@ -6,104 +6,40 @@ title: Creating Python plugin
 ## Prerequisites
 Install Python 3.7.8 if you do not already have it installed. </br>
 
-## boilerplate
+## Basic plugin
 You can build your first plugin with a few simple steps:
 1. Download this boilerplate.
 2. Update the plugin.json with your plugin's identifier and name
 3. [Add the plugin](Development) to your app.
 
-That's it! Now you'll see your plugin under the "Plugins" tab.
+That's it! Now you'll see your plugin under the "Plugins" tab. <br>
 Follow the "TODO" in "main.py" to configure your plugin
 
-## Basic plugin
-Browzwear supports writing a plugin in Python 3.7.8. Follow these steps to create a basic plugin:
 
-1. Install VStitcher.
-2. Go to VStitcher's plugins folder: <br/>
-```cpp
-Windows:  %localappdata%\Browzwear\VStitcher\plugins
-Mac:  ~/Library/Application Support/Browzwear/VStitcher/Plugins
-``` 
-   Note: If the Plugins folder doesn't exist, create it.
-3. Create a new folder for your plugin.
-4. Create another folder to contain the python plugin files - this will be the plugin package.
-5. Create two new files within the plugin package folder: <br/>
-```cpp
-__init__.py
-sample.py
-
-```
-5. Using your favorite Python editor, edit the files as follows: <br/>
-```python
-# __init__.py file
-
-from sample import *
-```
-
-```python
-# sample.py file
-
-# import Browzwear API library
-import BwApi
-
-# implement initialization function
-def BwApiPluginInit():
-  # return 1 for successful initialization
-  return 1
-```
-6. Create a file named plugin.json in the plugin folder. refer to "..\BWPlugin\schema\plugin_manifest.json" for more information.</br>
-   Example of plugin.json file:
-```json
-{
-  "identifier": {Your identifier},
-  "name": {Your plugin name},
-  "type": "python",
-  "main": {Your plugin path},
-}
-```
-  Note:'type' should always be python if you using python to create your plugin.
-
-For this example, the file structure should look like this
-
-```
-SamplePlugin
-│   plugin.json    
-└───{Python package folder name}
-    |   __init__.py
-    |   sample.py
-```
-
-That's it! You just created your first plugin (which doesn't do anything yet). Go to 'API Usage' on the main page to extend your plugin. -->
+## Debug your plugin with Eclipse 
+1. Install Eclipse.
+2. Open your plugin project: File > Open Projects From File System and import your plugin.
+3. Configure Python interpreter: 
+    * Select manual config
+      ![](../assets/manual-config.png)
+    * Select **Browse for python/pypy exe** 
+Go to your Browzwear folder and select Python folder. <br>For example :  %ProgramFiles%\Browzwear\VStitcher\{YOUR-VSTITCHER-VERSION}\Python
+![](../assets/browse.png)
+    * Select Ok
+    ![](../assets/select-ok.png)
+4. Add your plugin to VStitcher.
+5. At the beginning of the init function (BwApiPluginInit):
+    * Add the following line:
+    ![](../assets/use-frame.png)
+    * start writing pydev and choose the settrace() option as follow:
+  ![](../assets/pydev.png)
+6. As a result the following lines will be added:
+![](../assets/lines-pydev.png)
+7. Add trace_only_current_thread=True as parameter to pydevd.settrace function:
+![](../assets/set-trace.png)
+8. Open the **Debug** perspective: **Click Window > Perspective > Open Perspective > Other ...**
+9. Select the Debug perspective.
+10. Start pyDev server using this button: 
+![](../assets/debug.png)
 
 
-
-## Debugging your plugin within Browzwear
-1. Add VStitcher or Lotta as external tool in Eclipse: Click **Run > External Tools > External Tools Configurations..."**
-2. Add new configuration: Click the **New** button
-3. Under the **Name** write `Browzwear`
-4. Under the **Location** field enter VStitcher / Lotta executable file
-5. Click **Close**
-6. Go back to your `sample.py` file and add the following code to the initialize function:
-
-```python
-import sys
-sys.path.append(<path to pydevd/pysrc>)
-
-def BwApiPluginInit() -> int:
-  try:
-    import pydevd
-
-    # this line will cause the debugger to stop here and you will be able
-    # to debug the plugin
-    pydevd.settrace('localhost', port=5678)
-  except:
-    pass
-
-  # add menu item to the plugin menu
-  BwApi.MenuFunctionAdd('Hello World', callbackMenu, 1)
-  return 1
-```
-7. Open the **Debug** perspective: Click **Window > Perspective > Open Perspective > Other ...**
-8. Select the **Debug** perspective.
-9. Set PyDev to listen to 5678 port: Click **Pydev > Start Debug Server**, you should see the following line on the console - `Debug Server at port: 5678`.
-10. Launch VStitcher / Lotta from Eclipe using the configuration set at step #1:</br> Click **Run > External Tools > Browzwear**.
