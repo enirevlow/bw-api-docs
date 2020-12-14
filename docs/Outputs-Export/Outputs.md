@@ -10,10 +10,12 @@ To learn more about the rest of the API, please refer to <a href="https://gitlab
 
 
 
-## Sample plugin
+## Sample Plugin
 Sample plugin for export output is available <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/sample-plugins/python/Render" target="_blank">here</a>
  
-## Rendering an image
+## Rendering an Image
+
+### Code Snippet
 The code snippet below shows how to render the current garment as an image. The render image function receives a JSON file (as a string) that contains all the render image information. For more information, refer to: app installation folder\Resources\schema\v1\render.json.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
@@ -41,7 +43,9 @@ BwApi.RenderImage(garmentId, renderJson);
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
 
-## Exporting a 3D object
+## Exporting a 3D Object
+
+### Code Snippet
 The code snippet below shows how to export the current garment as a 3D object . The export 3D object function receives a JSON file (as a string) that contains all the exported information. For more information, refer to: app installation folder\Resources\schema\v3\export_3d_object.json.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
