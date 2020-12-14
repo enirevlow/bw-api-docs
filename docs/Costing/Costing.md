@@ -2,8 +2,13 @@
 id: Costing
 title: Costing
 ---
-## Get surface area material
-### Code snippet
+Costing is how you may get information of consumption of materials and calculate the cost of the garment. Use the Cost api to get, update cost and so on.
+
+To learn more about the rest of the API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/CAD/BWPluginAPI_Edge.h" target="_blank">GarmentCost</a> in the repository.
+
+
+## Get Surface Area of Material in Use
+### Code Snippet
 
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -27,8 +32,8 @@ BwApi.MaterialSurfaceAreaGet(garmentId, colorwayId, materialId, sizeId, out area
 ### Result
 The surface area of a material. <br/>
 
-## Get length material
-### Code snippet
+## Get length material of Material in Use
+### Code Snippet
 
 <!--DOCUSAURUS_CODE_TABS-->
 
