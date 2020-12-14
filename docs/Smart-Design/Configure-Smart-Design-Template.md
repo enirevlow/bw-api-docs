@@ -4,10 +4,10 @@ title: Configure Smart Design Template
 ---
 
 ## Create a Smart Template Garment
-### Code Snippet
+### Code snippet
 
 ## Create a Smart Template Category
-### Code Snippet
+### Code snippet
 
 ## Create a Smart Template Category Item 
-### COde Snippet
+### Code snippet
