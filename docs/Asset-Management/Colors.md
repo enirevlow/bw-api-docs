@@ -6,13 +6,13 @@ Colors is how you manage the color resources in your garments. Use the Colors AP
 
 For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Materials/color-libs.htm" target="_blank">here</a>.
 
-To learn more about the rest of the Color API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/AssetManagement/BWPluginAPI_Color.h" target="_blank">Color</a> in the repository.
+To learn more about the rest of the API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/AssetManagement/BWPluginAPI_Color.h" target="_blank">Color</a> in the repository.
 
-## Sample plugin
+## Sample Plugin
 Sample plugin for the color library is available <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/sample-plugins/python/color-library" target="_blank">here</a>
 
-## Creating a color library
-### Code snippet
+## Creating a Color Library
+### Code Snippet
 Browzwear allow you to programmatically add a new color library to the Browzwear's app.
 The API for creating a new color library receive JSON (as string) that contains all the information and colors for this library. For more information, refer to: schema/color/color-lib.json
 
@@ -44,12 +44,12 @@ BwApi.ColorLibraryCreate(garmentId, colorLibJson, out colorLibId);
 ### Result
 ![](../assets/color/adding-rgb.png)
 
-## Adding an existing color library
+## Adding an existing Color Library
 You can also add an existing color library from file. Browzwear support Adobe files (.ASE, .ACO) and JSON color library which is compatible with the color-lib <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/schema/api/v1.0/color/color_lib.json" target="_blank">schema</a>.
 
 Note: the filename will be used as a library name (so filename must be unique)
 
-### Code snippet
+### Code Snippet
 
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -78,10 +78,10 @@ BwApi.ColorLibraryAdd(garmentId, colorLibPath, out colorLibId);
 ### Result
 ![](../assets/color/existing-colors.png)
 
-## Getting colors from a library
+## Getting Colors from a Library
 Like as you can set the colors when creating a library you can get  from an existing library. 
 
-### Code snippet
+### Code Snippet
 
 <!--DOCUSAURUS_CODE_TABS-->
 

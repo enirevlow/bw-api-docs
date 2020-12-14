@@ -6,14 +6,14 @@ Avatars is what you dress the garments on 3D. Use the Avatars API get the curren
 
 For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Avatars/avatars.htm" target="_blank">here</a>.
 
-To learn more about the rest of the Avatar API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/General/BWPluginAPI_Avatar.h" target="_blank">Avatar</a> in the repository.
+To learn more about the rest of the API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/General/BWPluginAPI_Avatar.h" target="_blank">Avatar</a> in the repository.
 
-## Sample plugin
+## Sample Plugin
 Sample plugin for Avatars is available <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/sample-plugins/python/Avatar" target="_blank">here</a>
 
-## Getting current avatar 
+## Getting Current Avatar 
 
-### Code snippet
+### Code Snippet
 
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
@@ -39,9 +39,9 @@ BwApi.AvatarCurrentGet(out avatarId);
 ### Result
 The id of the current avatar
 
-## Importing an avatar
+## Importing an Avatar
 
-### Code snippet
+### Code Snippet
 
 Note: the avatar file must be FBX, OBJ, or AVA.
 <br/>
@@ -72,7 +72,7 @@ BwApi.AvatarImport(path, out avatarId);
 
 ## Importing a VSA file
 
-### Code snippet
+### Code Snippet
 
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
