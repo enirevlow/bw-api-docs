@@ -10,7 +10,7 @@ For more information about the feature, please visit <a href="https://support.b
 ## Sample Plugin
 Sample plugin for garment creation is available <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/sample-plugins/python/GarmentCreation" target="_blank">here</a>
 
-## Assign fabric
+## Assign Fabric
 
 ### Code Snippet
 <!--DOCUSAURUS_CODE_TABS-->
@@ -34,7 +34,7 @@ BwApiShapeMaterialIdSet(garmentId, shapeId, materialId);
 ### Result
 ![](../assets/assign-material/assign-fabric.png)
 
-## Assign seam
+## Assign Seam
 
 ### Code Snippet
 <!--DOCUSAURUS_CODE_TABS-->
@@ -58,10 +58,10 @@ BwApiEdgeMaterialIdSet(garmentId, shapeId, edgeId, materialId);
 ### Result
 ![](../assets/assign-material/assign-seam.png)
 
-## Assign artwork
+## Assign Artwork
 
 ### Code Snippet
 
-## Assign trim
+## Assign Trim
 
 ### Code Snippet
