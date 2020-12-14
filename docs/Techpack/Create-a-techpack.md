@@ -8,7 +8,9 @@ For more information about the feature, please visit <a href="https://support.b
 
 To learn more about creating a tech pack preset, please visit <a href="https://support.browzwear.com/VStitcher/Tech%20Packs/tech-packs-save.htm" target="_blank">here</a>.
 
-## Exporting the tech pack
+## Exporting the Tech Pack
+
+### Code Snippet
 The code snippet below shows how to export the tech pack for the current garment. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
 
