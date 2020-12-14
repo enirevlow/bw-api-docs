@@ -57,3 +57,11 @@ BwApiEdgeMaterialIdSet(garmentId, shapeId, edgeId, materialId);
 
 ### Result
 ![](../assets/assign-material/assign-seam.png)
+
+## Assign artwork
+
+### Code Snippet
+
+## Assign trim
+
+### Code Snippet
