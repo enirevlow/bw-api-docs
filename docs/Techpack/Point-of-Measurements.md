@@ -9,9 +9,9 @@ For more information about the feature, please visit <a href="https://support.b
 
 To learn more about the rest of the API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/CAD/BWPluginAPI_Ruler.h" target="_blank">Ruler</a> in the repository.
 
-## Creating a ruler
+## Creating a Ruler
 
-### Code snippet
+### Code Snippet
 
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -67,9 +67,9 @@ BwApi.RulerCreate(garmentId, "new ruler", elements, out rulerId);
 ### Result
 ![](../assets/techpack/create-ruler.png)
 
-## Getting ruler ids
+## Getting Ruler ids
 
-### Code snippet
+### Code Snippet
 
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -101,9 +101,9 @@ BwApi.RulerIds(out garmentId);
 ### Result
 List of all ruler ids
 
-## Getting a ruler name
+## Getting a Ruler name
 
-### Code snippet
+### Code Snippet
 
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -136,9 +136,9 @@ BwApi.RulerNameGet(garmentId, rulerId, out rulerName);
 ### Result
 The name of the Ruler for the given ruler id.
 
-## Getting the length of a ruler
+## Getting the Length of a Ruler
 
-### Code snippet
+### Code Snippet
 
 <!--DOCUSAURUS_CODE_TABS-->
 
