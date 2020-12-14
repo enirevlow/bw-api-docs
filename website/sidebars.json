@@ -42,9 +42,8 @@
 	  "Smart Design": [
 		"Smart-Design/Configure-Smart-Design-Template"
 ], 
-    	"Costing": [
-		"Costing/Get-surface-area-material",
-		"Costing/Get-length-material"
+	"Costing": [
+		"Costing/Costing"
 ],
 	"Terms of Use": [
 	"Terms-of-Use"
