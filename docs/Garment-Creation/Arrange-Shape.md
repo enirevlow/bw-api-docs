@@ -3,10 +3,16 @@ id: Arrange-Shape
 title: Arrange Shape
 ---
 
-Clusters are the way pattern pieces are located on the avatar. <br/>
-This document provides you with basic cluster functionality - You can create a cluster, add shapes to a cluster, remove a cluster, and so on.
+Clusters is how you arrange shapes on a avatar. Use the Cluster API to create a cluster, add shapes to a cluster, remove a cluster, and so on.
 
-For full documentation, refer to 'BWPluginAPI_Cluster.h' in the plugin pack.
+For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Basic/arranging-vs.htm" target="_blank">here</a>.
+
+To learn more about the rest of the API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/CAD/BWPluginAPI_Cluster.h" target="_blank">Cluster</a> in the repository.
+
+## Sample Plugin
+Sample plugin for garment creation is available <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/sample-plugins/python/GarmentCreation" target="_blank">here</a>
+
+Sample plugin for cluster arragement is available <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/sample-plugins/python/fix-cluster-position" target="_blank">here</a>
 
 ## Creating a cluster
 ### Code Snippet

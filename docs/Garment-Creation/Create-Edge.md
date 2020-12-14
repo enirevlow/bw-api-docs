@@ -3,6 +3,15 @@ id: Create-Edge
 title: Create Edge
 ---
 
+Edges is the outline of the shape. Use the Edge API to create, delete edges, set edge properties and so on.
+
+For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Basic/line-actions.htm" target="_blank">here</a>.
+
+To learn more about the rest of the API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/CAD/BWPluginAPI_Edge.h" target="_blank">Edge</a> in the repository.
+
+## Sample Plugin
+Sample plugin for garment creation is available <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/sample-plugins/python/GarmentCreation" target="_blank">here</a>.
+
 ## Code Snippet
 The code snippet below shows how to add an edge to an existing shape.
 

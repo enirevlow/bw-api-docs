@@ -3,6 +3,13 @@ id: Assign-Material
 title: Assign Material
 ---
 
+Assign Material is how you add a material to a shape or edge of a garment. Use the Shape or Edge API to assign, replace a fabric, seam, artwork, trim and so on.
+
+For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Materials/materials.htm" target="_blank">here</a>.
+
+## Sample Plugin
+Sample plugin for garment creation is available <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/sample-plugins/python/GarmentCreation" target="_blank">here</a>
+
 ## Assign fabric
 
 ### Code Snippet
@@ -50,3 +57,11 @@ BwApiEdgeMaterialIdSet(garmentId, shapeId, edgeId, materialId);
 
 ### Result
 ![](../assets/assign-material/assign-seam.png)
+
+## Assign artwork
+
+### Code Snippet
+
+## Assign trim
+
+### Code Snippet
