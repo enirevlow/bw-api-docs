@@ -7,14 +7,14 @@ Materials are fabrics, seams, artworks or trims on a garment. Use the Material A
 
 For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Materials/materials.htm" target="_blank">here</a>.
 
-To learn more about the rest of the Material API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/AssetManagement/BWPluginAPI_Material.h" target="_blank">Material</a> in the repository.
+To learn more about the rest of the API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/AssetManagement/BWPluginAPI_Material.h" target="_blank">Material</a> in the repository.
 
-## Sample plugin
+## Sample Plugin
 Sample plugin for Materials is available <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/sample-plugins/python" target="_blank">here</a>
 
 ## Importing U3M
 
-### Code snippet
+### Code Snippet
 
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -54,7 +54,7 @@ BwApi.MaterialImport(garmentId, colorwayId, "path to the u3m", materialIds);
 
 ## Exporting U3M
 
-### Code snippet
+### Code Snippet
 
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -90,9 +90,9 @@ BwApi.MaterialExport(garmentId, colorwayId, 1, "path to export the u3m")
 <br/>
 
 
-## Getting material by id
+## Getting Material by id
 
-### Code snippet
+### Code Snippet
 
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -124,9 +124,9 @@ BwApi.MaterialGet(garmentId, colorwayId, materialId, out materialJson);
 
 material json object as string containing all the material's information. see <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/schema/api/v2.0/material/material.json" target="_blank">schema</a>
 
-## Deleting a material
+## Deleting a Material
 
-### Code snippet
+### Code Snippet
 The code snippet below shows how to delete an existing material. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -155,9 +155,9 @@ BwApi.MaterialDelete(garmentId, colorwayId, materialId);
 ### Result
 ![](../assets/material/delete-u3m.png)
 
-## Cloning a material
+## Cloning a Material
 
-### Code snippet
+### Code Snippet
 The code snippet below shows how to clone an existing material to any colorway. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -187,9 +187,9 @@ BwApi.MaterialClone(garmentId, colorwayId, materialId, destColorwayId, out newMa
 ### Result
 ![](../assets/material/clone-material.png)
 
-## Updating a material
+## Updating a Material
 
-### Code snippet
+### Code Snippet
 <!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
