@@ -3,7 +3,7 @@ id: Stitch-Shapes
 title: Stitch Shapes
 ---
 
-Stitch is how you combine 2 edges, internal edges, or points together and combine multiple shapes together to create a garment. Use the Stitch edge to create, delete a stitch and so on
+Stitch Shapes is how you combine 2 edges, internal edges, or points together and combine multiple shapes together to create a garment. Use the Stitch edge to create, delete a stitch and so on
 
 For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Stitching/stitch-vs.htm" target="_blank">here</a>.
 
