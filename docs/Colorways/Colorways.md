@@ -2,13 +2,15 @@
 id: Colorways
 title: Colorways
 ---
+A colorway is a combination of color, seams, trims, fabrics, and artwork of a garment. Use the Colorway API to get the current colorway, clone a colorway, and so on.
 
-This document provides you with basic colorway functionality. You can get the current colorway, clone a colorway, and so on.
+For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Colorways/colorways-vs.htm" target="_blank">here</a>.
 
-For full documentation, refer to 'BWPluginAPI_Colorway.h' in the plugin pack.
+To learn more about the rest of the API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/CAD/BWPluginAPI_Colorway.h" target="_blank">Colorway</a> in the repository.
 
 
 ## Deleting a colorway
+### Code snippet
 The code snippet below shows how to delete a colorway. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -34,6 +36,7 @@ BwApi.ColorwayDelete(garmentId, colorwayId);
 <br/>
 
 ## Getting the current colorway
+### Code snippet
 The code snippet below shows how to get the current colorway.
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -58,6 +61,7 @@ BwApi.ColorwayCurrentGet(garmentId, out currentColorway);
 
 
 ## Setting the current colorway
+### Code snippet
 The code snippet below shows how to set the current colorway. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -84,6 +88,7 @@ BwApi.ColorwayCurrentSet(garmentId, colorwayId);
 <br/><br/>
 
 ## Cloning a colorway
+### Code snippet
 The code snippet below shows how to clone a colorway.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
@@ -112,6 +117,7 @@ BwApi.ColorwayClone(garmentId, colorwayId, out newColorwayId);
 <br/>
 
 ## Getting the material ids of a colorway
+### Code snippet
 The code snippet below shows how to get the material ids of a colorway.
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -139,6 +145,7 @@ BwApi.ColorwayMaterialIds(garmentId, colorwayId, materialIds);
 <br/>
 
 ## Getting the colorway name
+### Code snippet
 The code snippet below shows how to get the name of a colorway.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
@@ -168,6 +175,7 @@ BwApi.ColorwayNameGet(garmentId, colorwayId, out colorwayName);
 <br/>
 
 ## Setting the colorway name
+### Code snippet
 The code snippet below shows how to set the name of a colorway.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
@@ -197,6 +205,7 @@ BwApi.ColorwayNameSet(garmentId, colorwayId, "colorway name");
 
 
 ## Getting colors in use
+### Code snippet
 The code snippet below shows how to get the colors in use in a colorway. The return value from this function is an array of color.
 Note: color is represented by RGB data.
 <br/>
@@ -228,6 +237,7 @@ BwApi.ColorwayColorsInUseGet(garmentId, colorwayId, colors);
 
 
 ## Updating colors in use
+### Code snippet
 The code snippet below shows how to update a color in use in a colorway. The function gets an existing color and replaces it with another color.
 Note: color is represented by RGB data.
 <br/>
