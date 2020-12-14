@@ -1,6 +1,6 @@
 ---
 id: Dress-a-Garment
-title: Dress a garment
+title: Dress a Garment
 ---
 
 Dress is how you drape a garment over an avatar. Use the Garment API to dress a garment, add iterations to a simulation and so on. 
@@ -12,8 +12,9 @@ To learn more about the rest of the API, please refer to <a href="https://gitlab
 ## Sample Plugin
 Sample plugin for garment creation is available <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/sample-plugins/python/GarmentCreation" target="_blank">here</a>
 
-## Dress garment
-### Code snippet
+## Dress Garment
+
+### Code Snippet
 The code snippet below shows how to start garment dress simulation on the current avatar. 
 
 <!--DOCUSAURUS_CODE_TABS-->
