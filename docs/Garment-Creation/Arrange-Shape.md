@@ -14,7 +14,7 @@ Sample plugin for garment creation is available <a href="https://gitlab.com/brow
 
 Sample plugin for cluster arragement is available <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/sample-plugins/python/fix-cluster-position" target="_blank">here</a>
 
-## Creating a cluster
+## Creating a Cluster
 ### Code Snippet
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -53,7 +53,7 @@ BwApi.ClusterCreate(garmentId,
 New cluster id.<br>
 Note: Creating a cluster without any shape doesn't do anything. <br/>
 
-## Adding shape to a cluster
+## Adding Shape to a Cluster
 A cluster may have more than one shape associated with it.
 
 ### Code Snippet
@@ -89,7 +89,7 @@ BwApi.ClusterShapeAdd(garmentId,
 ### Result
 ![](../assets/arrange-shape/add-shape.png)
 
-## Setting shape offset on a cluster
+## Setting Shape Offset on a Cluster
 
 ### Code Snippet
 The code snippet below shows how to set the shape offset from the cluster hanging point.
@@ -144,7 +144,7 @@ BwApi.ClusterShapeOffsetSet(garmentId, clusterId, shapeId, offset);
 ![](../assets/arrange-shape/offset-shape.png)
 
 
-## Removing a shape from a cluster
+## Removing a Shape from a Cluster
 
 ### Code Snippet
 <!--DOCUSAURUS_CODE_TABS-->
@@ -173,7 +173,7 @@ BwApi.ClusterShapeRemove(garmentId, clusterId, shapeId);
 ### Result
 ![](../assets/arrange-shape/delete-cluster.png)
 
-## Deleting a cluster
+## Deleting a Cluster
 
 ### Code Snippet
 <!--DOCUSAURUS_CODE_TABS-->
