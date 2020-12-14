@@ -7,14 +7,14 @@ Garments is what you create in Browzwear applications. Use the Garment Creation 
 
 For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/basic.htm" target="_blank">here</a>.
 
-To learn more about the rest of the Garment API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/CAD/BWPluginAPI_Garment.h" target="_blank">Garment</a> in the repository.
+To learn more about the rest of the API, please refer to <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/include/CAD/BWPluginAPI_Garment.h" target="_blank">Garment</a> in the repository.
 
-## Sample plugin
+## Sample Plugin
 Sample plugin for the Garment creation is available <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/sample-plugins/python/GarmentCreation" target="_blank">here</a>
 
-## Open a garment
+## Open a Garment
 
-### Code snippet
+### Code Snippet
 The code snippet below shows how to open a garment from file (.vsp, .vsgx, .bw or .dxf)
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -34,12 +34,12 @@ garment = BwApi.GarmentOpen("full path to the garment file");
 <!--END_DOCUSAURUS_CODE_TABS-->
 <br/>
 
-## Dress a garment
+## Dress a Garment
 You can learn how to dress a garment [here.](../Garment-Creation/Dress-a-Garment.md)
 
-## Save a garment
+## Save a Garment
 
-### Code snippet
+### Code Snippet
 
 The code snippet below shows how to save garment to file (.bw)
 
