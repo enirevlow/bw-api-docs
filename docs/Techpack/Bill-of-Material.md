@@ -6,7 +6,9 @@ Bill of Material is how you obtain information of materials and colors used in e
 
 For more information about the feature, please visit <a href="https://support.browzwear.com/VStitcher/Colorways/colorways-vs.htm">here</a>.
 
-## Getting colorway IDs
+## Getting Colorway IDs
+
+### Code Snippet
 The code snippet below shows how to get the colorway ids in the garment in the right order. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -33,7 +35,9 @@ BwApi.GarmentColorwayIds(garmentId, colorwayIds);
 
 <br/>
 
-## Getting material in use
+## Getting Material in Use
+
+### Code Snippet
 The code snippet below shows how to get the colors in use in a colorway. The return value from this function is an array of color.
 Note: color is represented by RGB data.
 <br/>
@@ -54,7 +58,9 @@ BwApi.ColorwayUsedMaterialIds(garmentId, colorwayId);
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-## Getting colors in use
+## Getting Colors in Use
+
+### Code Snippet
 The code snippet below shows how to get the colors in use in a colorway. The return value from this function is an array of color.
 Note: color is represented by RGB data.
 <br/>
